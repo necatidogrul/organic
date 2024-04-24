@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Products</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <header
+        class="d-flex flex-wrap justify-content-center py-3 border-bottom"
+      >
+        <a
+          href="/"
+          class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none"
+        >
+          <svg class="bi me-2" width="40" height="32">
+            <use xlink:href="#bootstrap"></use>
+          </svg>
+          <span class="fs-4">ORGANIC</span>
+        </a>
+
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link text-black">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="products.html" class="nav-link bg-success text-light"
+              >Products</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="faq.html" class="nav-link text-black">FAQs</a>
+          </li>
+          <li class="nav-item">
+            <a href="#" class="nav-link text-black">About</a>
+          </li>
+        </ul>
+      </header>
+    </div>
+    <section class="products-img">
+      <div class="container px-4 py-5 text-center">
+        <h1 class="fs-1 text-light">Discover the Freshness</h1>
+        <div class="col-lg-6 mx-auto">
+          <p class="lead mb-5 p-2 text-white">
+            High-quality organic products available to everyone across the
+            country.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="products py-5 bg-light">
+      <div class="container">
+        <div class="row">
+          <div class="text text-center">
+            <h2 class="fs-1 mb-5 pt-5 pb-2 fw-bold">
+              Whatever you crave,<br />
+              the <span class="text-success">freshest</span> is here
+            </h2>
+          </div>
+          <div
+            id="cards"
+            class="row d-flex flex-wrap justify-content-between align-items-center"
+          >
+            <div class="food-card p-0 mb-3 bg-secondary rounded-5">
+              <div
+                class="food-card-img p-0 d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="https://farmfreshbangalore.com/cdn/shop/products/Avocado.jpg?v=1655876628"
+                  class="img img-fluid object-fit-cover wp-post-image"
+                  alt="organic-avocado"
+                  style="width: 320px; height: 214px; mix-blend-mode: multiply"
+                />
+              </div>
+              <div class="mt-4 product-detail">
+                <h5 class="mb-1 py-2 text-center fs-4">Avocado</h5>
+                <div class="d-flex justify-content-between gap-5 flex-column">
+                  <div class="text-center">
+                    <h4 class="p-2 fw-semibold">2 USD</h4>
+                    <div class="buttons pb-4">
+                      <div class="btn btn-dark">
+                        <img src="images/plus.svg" alt="" />
+                      </div>
+                      <div onclick="toggleModal1()" class="btn btn-dark">
+                        PURCHASE
+                      </div>
+
+                      <div class="btn btn-dark">
+                        <img src="images/minus.svg" alt="" />
+                      </div>
+                    </div>
+
+                    <div id="avocado" class="modal rounded-5" tabindex="-1">
+                      <div class="modal-dialog rounded-5">
+                        <div class="modal-content rounded-5">
+                          <div class="modal-header text-center">
+                            <h5
+                              style="margin: 0 auto"
+                              class="modal-title text-center"
+                            >
+                              Avocado
+                            </h5>
+                          </div>
+                          <div class="modal-body bg-light rounded-bottom-5">
+                            <img
+                              src="https://farmfreshbangalore.com/cdn/shop/products/Avocado.jpg?v=1655876628"
+                              class="img-fluid object-fit-cover wp-post-image"
+                              alt="organic-avocado"
+                              style="
+                                width: 320px;
+                                height: 214px;
+                                mix-blend-mode: multiply;
+                              "
+                            />
+
+                            <p class="px-5 pt-3 fs-5">
+                              Avocados are a source of key nutrients, including
+                              healthy fats and fiber. They also contain
+                              anti-inflammatory and antioxidant compounds and
+                              may help reduce heart disease risk.
+                            </p>
+                            <p>
+                              Place of Production:
+                              <span class="fw-bold">Antalya, Turkey</span>
+                            </p>
+                            <h4 class="p-2 fw-semibold">2 USD</h4>
+                            <div class="buttons pb-4">
+                              <div class="btn btn-dark">
+                                <img src="images/plus.svg" alt="" />
+                              </div>
+                              <div class="btn btn-dark">PURCHASE</div>
+
+                              <div class="btn btn-dark">
+                                <img src="images/minus.svg" alt="" />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="food-card p-0 mb-3 bg-secondary rounded-5">
+              <div
+                class="food-card-img p-0 d-flex justify-content-center align-items-center"
+              >
+                <img
+                  src="https://media.istockphoto.com/id/606230354/tr/foto%C4%9Fraf/dragon-fruit-isolated.jpg?s=612x612&w=0&k=20&c=F4VJyxi74NU37CTgpvuj2Pz8ulxTBBV4uyE0UxBJqL0="
+                  class="img img-fluid object-fit-cover wp-post-image"
+                  alt="organic-avocado"
+                  style="width: 320px; height: 214px; mix-blend-mode: multiply"
+                />
+              </div>
+              <div class="mt-4 product-detail">
+                <h5 class="mb-1 py-2 text-center fs-4">Dragonfruit</h5>
+                <div class="d-flex justify-content-between gap-5 flex-column">
+                  <div class="text-center">
+                    <h4 class="p-2 fw-semibold">5 USD</h4>
+                    <div class="buttons pb-4">
+                      <div class="btn btn-dark">
+                        <img src="images/plus.svg" alt="" />
+                      </div>
+                      <div onclick="toggleModal2()" class="btn btn-dark">
+                        PURCHASE
+                      </div>
+
+                      <div class="btn btn-dark">
+                        <img src="images/minus.svg" alt="" />
+                      </div>
+                    </div>
+
+                    <div id="dragonfruit" class="modal" tabindex="-1">
+                      <div class="modal-dialog rounded-5">
+                        <div class="modal-content rounded-5">
+                          <div class="modal-header text-center rounded-5">
+                            <h5 style="margin: 0 auto" class="modal-title">
+                              Dragonfruit
+                            </h5>
+                          </div>
+                          <div class="modal-body rounded-bottom-5">
+                            <img
+                              src="https://media.istockphoto.com/id/606230354/tr/foto%C4%9Fraf/dragon-fruit-isolated.jpg?s=612x612&w=0&k=20&c=F4VJyxi74NU37CTgpvuj2Pz8ulxTBBV4uyE0UxBJqL0="
+                              style="
+                                width: 320px;
+                                height: 214px;
+                                mix-blend-mode: multiply;
+                              "
+                            />
+                            <p class="px-5 pt-3 fs-5">
+                              Dragon fruit, also known as pitahaya or strawberry
+                              pear, is a low calorie tropical fruit known for
+                              its vibrant red skin and sweet, seed-speckled
+                              pulp. It contains nutrients, prebiotic fibers, and
+                              other healthy substances.
+                            </p>
+                            <p>
+                              Place of Production:
+                              <span class="fw-bold">Antalya, Turkey</span>
+                            </p>
+                            <h4 class="p-2 fw-semibold">5 USD</h4>
+                            <div class="buttons pb-4">
+                              <div class="btn btn-dark">
+                                <img src="images/plus.svg" alt="" />
+                              </div>
+                              <div class="btn btn-dark">PURCHASE</div>
+
+                              <div class="btn btn-dark">
+                                <img src="images/minus.svg" alt="" />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="food-card p-0 mb-3 bg-secondary rounded-5">
+              <div
+                class="food-card-img p-0 d-flex justify-content-center align-items-center"
+              >
+                <img
+                  class="img img-fluid object-fit-cover wp-post-image"
+                  src="https://media.istockphoto.com/id/187899456/tr/foto%C4%9Fraf/mango-isolated-on-white.jpg?s=612x612&w=0&k=20&c=wWXLlMIqiWurU7VoXz9f4do6X1h_TpEo-rcd2-MH1Is="
+                  style="width: 320px; height: 214px; mix-blend-mode: multiply"
+                />
+              </div>
+              <div class="mt-4 product-detail">
+                <h5 class="mb-1 py-2 text-center fs-4">Mango</h5>
+                <div class="d-flex justify-content-between gap-5 flex-column">
+                  <div class="text-center">
+                    <h4 class="p-2 fw-semibold">3 USD</h4>
+                    <div class="buttons pb-4">
+                      <div class="btn btn-dark">
+                        <img src="images/plus.svg" alt="" />
+                      </div>
+                      <div onclick="toggleModal3()" class="btn btn-dark">
+                        PURCHASE
+                      </div>
+
+                      <div class="btn btn-dark">
+                        <img src="images/minus.svg" alt="" />
+                      </div>
+                    </div>
+
+                    <div id="mango" class="modal" tabindex="-1">
+                      <div class="modal-dialog rounded-5">
+                        <div class="modal-content rounded-5">
+                          <div class="modal-header text-center rounded-5">
+                            <h5
+                              style="margin: 0 auto"
+                              class="modal-title text-center"
+                            >
+                              Mango
+                            </h5>
+                          </div>
+                          <div class="modal-body rounded-bottom-5">
+                            <img
+                              src="https://media.istockphoto.com/id/187899456/tr/foto%C4%9Fraf/mango-isolated-on-white.jpg?s=612x612&w=0&k=20&c=wWXLlMIqiWurU7VoXz9f4do6X1h_TpEo-rcd2-MH1Is="
+                              style="
+                                width: 320px;
+                                height: 214px;
+                                mix-blend-mode: multiply;
+                              "
+                            />
+                            <p class="px-5 pt-3 fs-5">
+                              Mangoes are one of the sweetest fruits. Native to
+                              South Asia, they've been an important food in
+                              traditional Indian Ayurvedic medicine for over
+                              4,000 years.
+                            </p>
+                            <p>
+                              Place of Production:
+                              <span class="fw-bold">India</span>
+                            </p>
+                            <h4 class="p-2 fw-semibold">3 USD</h4>
+                            <div class="buttons pb-4">
+                              <div class="btn btn-dark">
+                                <img src="images/plus.svg" alt="" />
+                              </div>
+                              <div class="btn btn-dark">PURCHASE</div>
+
+                              <div class="btn btn-dark">
+                                <img src="images/minus.svg" alt="" />
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+        <div class="container">
+      <footer class="py-5">
+        <div class="row">
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary"
+                  >Features</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-6 col-md-2 mb-3">
+            <h5>Work with us</h5>
+            <ul class="nav flex-column">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Career</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary"
+                  >Who we are?</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary"
+                  >Our Mission</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary"
+                  >Our Vision</a
+                >
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary"
+                  >Our Team</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-md-5 offset-md-1 mb-3">
+            <form>
+              <h5>Subscribe to our newsletter</h5>
+              <p>Monthly digest of what's new and exciting from us.</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden"
+                  >Email address</label
+                >
+                <input
+                  id="newsletter1"
+                  type="text"
+                  class="form-control"
+                  placeholder="Email address"
+                />
+                <button class="btn btn-primary" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div
+          class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top"
+        >
+          <p>© 2024 ORGANIC by Necati Doğrul, Inc. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3">
+              <a class="link-body-emphasis" href="#"
+                ><svg class="bi" width="24" height="24">
+                  <use xlink:href="#twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="ms-3">
+              <a class="link-body-emphasis" href="#"
+                ><svg class="bi" width="24" height="24">
+                  <use xlink:href="#instagram"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="ms-3">
+              <a class="link-body-emphasis" href="#"
+                ><svg class="bi" width="24" height="24">
+                  <use xlink:href="#facebook"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+    <script>
+      var modal1 = new bootstrap.Modal(document.getElementById("avocado"));
+      var modal2 = new bootstrap.Modal(document.getElementById("dragonfruit"));
+      var modal3 = new bootstrap.Modal(document.getElementById("mango"));
+      function toggleModal1() {
+        // Toggle Modal
+        modal1.toggle();
+      }
+      function toggleModal2() {
+        // Toggle Modal
+        modal2.toggle();
+      }
+      function toggleModal3() {
+        // Toggle Modal
+        modal3.toggle();
+      }
+    </script>
+  </body>
+</html>
